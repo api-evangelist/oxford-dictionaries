@@ -1,0 +1,1151 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.8.0",
+        "title": "Oxford Dictionaries",
+        "description": "If you???re looking to enhance your app or website with dictionary data, don???t compromise on quality. The Oxford Dictionaries API offers easy and intuitive access to Oxford's dictionary content, which is trusted around the world. Here at Oxford Dictionaries, home of the OED, we love words. That???s why we have experienced lexicographers tracking the living language, delving deep into our corpora and monitoring a wide range of media in order to understand how words are being used and how language is evolving. This research is used by our editors to write and edit dictionary entries and translations, meaning we???re able to offer up-to-date, accurate, and reliable lexical content in multiple languages.",
+        "termsOfService": "http:\/\/helloreverb.com\/terms\/"
+    },
+    "servers": [
+        "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1"
+    ],
+    "paths": {
+        "\/domains\/{source_domains_language}\/{target_domains_language}": {
+            "get": {
+                "summary": "Lists available domains in a bilingual dataset",
+                "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given bilingual language dataset.\n",
+                "operationId": "GetDomainsSourceDomainsLanguageTargetDomainsLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_domains_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "target_domains_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/domains\/{source_language}": {
+            "get": {
+                "summary": "Lists available domains in a monolingual dataset",
+                "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given monolingual language dataset.\n",
+                "operationId": "GetDomainsSourceLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/entries\/{source_language}\/{word_id}\/sentences": {
+            "get": {
+                "summary": "Retrieve corpus sentences for a given word",
+                "description": "\nUse this to retrieve sentences extracted from  corpora which show how a word is used in the language. This is available for English and Spanish. For English, the sentences are linked to the correct [sense](documentation\/glossary?term=sense) of the word in the dictionary. In Spanish, they are linked at the [headword](documentation\/glossary?term=headword) level.\n  \n",
+                "operationId": "GetEntriesSourceLanguageWordSentences",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}": {
+            "get": {
+                "summary": "Retrieve dictionary information for a given word",
+                "description": "\nUse this to retrieve definitions, [pronunciations](documentation\/glossary?term=pronunciation), example sentences, [grammatical information](documentation\/glossary?term=grammaticalfeatures) and [word origins](documentation\/glossary?term=etymology). It only works for dictionary [headwords](documentation\/glossary?term=headword), so you may need to use the [Lemmatron](documentation\/glossary?term=lemma) first if your input is likely to be an [inflected](documentation\/glossary?term=inflection) form (",
+                "operationId": "GetEntriesSourceLangWord",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/antonyms": {
+            "get": {
+                "summary": "Retrieve words that mean the opposite",
+                "description": "\nRetrieve words that are opposite in meaning to the input word ([antonym](documentation\/glossary?term=thesaurus)).\n\n  \n",
+                "operationId": "GetEntriesSourceLangWordAntonyms",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/regions={region}": {
+            "get": {
+                "summary": "Specify GB or US dictionary for English entry search",
+                "description": "\nUSe this filter to restrict the lookup to either our Oxford Dictionary of English (GB) or New Oxford American Dictionary (US).\n",
+                "operationId": "GetEntriesSourceLangWordRegionsRegion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_lang",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "region",
+                        "in": "path",
+                        "description": "Region filter parameter. gb = Oxford Dictionary of English. us = New Oxford American Dictionary."
+                    }
+                ]
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/synonyms": {
+            "get": {
+                "summary": "Retrieve words that are similar",
+                "description": "\nUse this to retrieve words that are similar in meaning to the input word ([synonym](documentation\/glossary?term=synonym)).\n\n  \n",
+                "operationId": "GetEntriesSourceLangWordSynonyms",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/synonyms;antonyms": {
+            "get": {
+                "summary": "Retrieve synonyms and antonyms for a given word",
+                "description": "\nRetrieve available [synonyms](documentation\/glossary?term=thesaurus) and [antonyms](documentation\/glossary?term=thesaurus) for a given word and language. \n\n  \n",
+                "operationId": "GetEntriesSourceLangWordSynonyms;antonyms",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/{filters}": {
+            "get": {
+                "summary": "Apply filters to response",
+                "description": "\nUse filters to limit the [entry](documentation\/glossary?term=entry) information that is returned. For example, you may only require definitions and not everything else, or just [pronunciations](documentation\/glossary?term=pronunciation). The full list of filters can be retrieved from the filters Utility endpoint. You can also specify values within the filter using '='. For example 'grammaticalFeatures=singular'. Filters can also be combined using a semicolon.\n\n  \n",
+                "operationId": "GetEntriesSourceLangWordFilters",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_translation_language}\/{word_id}\/translations={target_translation_language}": {
+            "get": {
+                "summary": "Retrieve translation for a given word",
+                "description": "\nUse this to return translations for a given word. In the event that a word in the dataset does not have a direct translation, the response will be a [definition](documentation\/glossary?term=entry) in the target language.\n\n  \n",
+                "operationId": "GetEntriesSourceTranslationLanguageWordTranslationsTargetTranslationLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_translation_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "word_id",
+                        "in": "path",
+                        "description": "The source word"
+                    },
+                    {
+                        "name": "target_translation_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/filters": {
+            "get": {
+                "summary": "Lists available filters",
+                "description": "Returns a list of all the valid filters to construct API calls.\n",
+                "operationId": "GetFilters",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/filters\/{endpoint}": {
+            "get": {
+                "summary": "Lists available filters for specific endpoint",
+                "description": "Returns a list of all the valid filters for a given endpoint to construct API calls.\n",
+                "operationId": "GetFiltersEndpoint",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "endpoint",
+                        "in": "path",
+                        "description": "Name of the endpoint."
+                    }
+                ]
+            }
+        },
+        "\/grammaticalFeatures\/{source_language}": {
+            "get": {
+                "summary": "Lists available grammatical features in a dataset",
+                "description": "Returns a list of the available [grammatical features](documentation\/glossary?term=grammaticalfeatures) for a given language dataset.\n",
+                "operationId": "GetGrammaticalfeaturesSourceLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/inflections\/{source_lang}\/{word_id}": {
+            "get": {
+                "summary": "Check a word exists in the dictionary and retrieve its root form",
+                "description": "\nUse this to check if a word exists in the dictionary, or what 'root' form it links to (e.g., swimming > swim). The response tells you the possible [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) word. This can then be combined with other endpoints to retrieve more information.\n\n  \n",
+                "operationId": "GetInflectionsSourceLangWord",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "word_id",
+                        "in": "path",
+                        "description": "The source word"
+                    }
+                ]
+            }
+        },
+        "\/inflections\/{source_lang}\/{word_id}\/{filters}": {
+            "get": {
+                "summary": "Apply optional filters to Lemmatron response",
+                "description": "\nRetrieve available [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) wordform. Filter results by categories.  \n\n  \n",
+                "operationId": "GetInflectionsSourceLangWordFilters",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "word_id",
+                        "in": "path",
+                        "description": "The source word"
+                    }
+                ]
+            }
+        },
+        "\/languages": {
+            "get": {
+                "summary": "Lists available dictionaries",
+                "description": "Returns a list of monolingual and bilingual language datasets available in the API\n",
+                "operationId": "GetLanguages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sourceLanguage",
+                        "in": "query",
+                        "description": "IANA language code. If provided output will be filtered by sourceLanguage."
+                    },
+                    {
+                        "name": "targetLanguage",
+                        "in": "query",
+                        "description": "IANA language code. If provided output will be filtered by sourceLanguage."
+                    }
+                ]
+            }
+        },
+        "\/lexicalcategories\/{language}": {
+            "get": {
+                "summary": "Lists available lexical categories in a dataset",
+                "description": "Returns a list of available [lexical categories](documentation\/glossary?term=lexicalcategory) for a given language dataset.\n",
+                "operationId": "GetLexicalcategoriesLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/regions\/{source_language}": {
+            "get": {
+                "summary": "Lists available regions in a monolingual dataset",
+                "description": "Returns a list of the available [regions](documentation\/glossary?term=regions) for a given monolingual language dataset.\n",
+                "operationId": "GetRegionsSourceLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/registers\/{source_language}": {
+            "get": {
+                "summary": "Lists available registers in a  monolingual dataset",
+                "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given monolingual language dataset.\n",
+                "operationId": "GetRegistersSourceLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/registers\/{source_register_language}\/{target_register_language}": {
+            "get": {
+                "summary": "Lists available registers in a bilingual dataset",
+                "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given bilingual language dataset.\n",
+                "operationId": "GetRegistersSourceRegisterLanguageTargetRegisterLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_register_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "target_register_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    }
+                ]
+            }
+        },
+        "\/search\/{source_lang}": {
+            "get": {
+                "summary": "Retrieve possible matches to input",
+                "description": "\nUse this to retrieve possible [headword](documentation\/glossary?term=headword) matches for a given string of text. The results are culculated using headword matching, fuzzy matching, and [lemmatization](documentation\/glossary?term=lemma) \n\n  \n",
+                "operationId": "GetSearchSourceLang",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_lang",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search string"
+                    },
+                    {
+                        "name": "prefix",
+                        "in": "query",
+                        "description": "Set prefix to true if you'd like to get results only starting with search string."
+                    },
+                    {
+                        "name": "regions",
+                        "in": "query",
+                        "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    }
+                ]
+            }
+        },
+        "\/search\/{source_search_language}\/translations={target_search_language}": {
+            "get": {
+                "summary": "Retrieve possible translation matches to input",
+                "description": "\nUse this to find matches in our translation dictionaries.\n\n  \n",
+                "operationId": "GetSearchSourceSearchLanguageTranslationsTargetSearchLanguage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_search_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "target_search_language",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search string"
+                    },
+                    {
+                        "name": "prefix",
+                        "in": "query",
+                        "description": "Set prefix to true if you'd like to get results only starting with search string."
+                    },
+                    {
+                        "name": "regions",
+                        "in": "query",
+                        "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    }
+                ]
+            }
+        },
+        "\/stats\/frequency\/ngrams\/{source_lang}\/{corpus}\/{ngram-size}\/": {
+            "get": {
+                "summary": "Retrieve the frequency of ngrams (1-4) derived from a corpus",
+                "description": "This endpoint returns frequencies of ngrams of size 1-4. That is the number of times a word (ngram size = 1) or words (ngram size > 1) appear in the corpus. Ngrams are case sensitive (\"I AM\" and \"I am\" will have different frequency) and frequencies are calculated per word (true case) so \"the book\" and \"the books\" are two different ngrams. The results can be filtered based on query parameters.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden b",
+                "operationId": "GetStatsFrequencyNgramsSourceLangCorpusNgramSize",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_lang",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "corpus",
+                        "in": "path",
+                        "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com"
+                    },
+                    {
+                        "name": "ngram",
+                        "in": "path",
+                        "description": "the size of ngrams requested (1-4)"
+                    },
+                    {
+                        "name": "tokens",
+                        "in": "query",
+                        "description": "List of tokens to filter. The tokens are separated by spaces, the list items are separated by comma (e.g., for bigrams (n=2) tokens=this is,this was, this will)"
+                    },
+                    {
+                        "name": "contains",
+                        "in": "query",
+                        "description": "Find ngrams containing the given token(s). Use comma or space as token separators; the order of tokens is irrelevant."
+                    },
+                    {
+                        "name": "punctuation",
+                        "in": "query",
+                        "description": "Flag specifying whether to lookup ngrams that include punctuation or not (possible values are \"true\" and \"false\"; default is \"false\")"
+                    },
+                    {
+                        "name": "format",
+                        "in": "query",
+                        "description": "Option specifying whether tokens should be returned as a single string (option \"google\") or as a list of strings (option \"oup\")"
+                    },
+                    {
+                        "name": "minFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at least `minFrequency`"
+                    },
+                    {
+                        "name": "maxFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at most `maxFrequency`"
+                    },
+                    {
+                        "name": "minDocumentFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries that appear in at least `minDocumentFrequency` documents"
+                    },
+                    {
+                        "name": "maxDocumentFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries that appera in at most `maxDocumentFrequency` documents"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    }
+                ]
+            }
+        },
+        "\/stats\/frequency\/word\/{source_lang}\/": {
+            "get": {
+                "summary": "Retrieve the frequency of a word derived from a corpus.",
+                "description": "This endpoint provides the frequency of a given word. When multiple database records match the query parameters, the returned frequency is the sum of the individual frequencies. For example, if the query parameters are lemma=test, the returned frequency will include the verb \"test\", the noun \"test\" and the adjective \"test\" in all forms (Test, tested, testing, etc.)   If you are interested in the frequency of the word \"test\" but want to exclude other forms (e.g., tested) use the option trueCase=t",
+                "operationId": "GetStatsFrequencyWordSourceLang",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_lang",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "corpus",
+                        "in": "query",
+                        "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com"
+                    },
+                    {
+                        "name": "wordform",
+                        "in": "query",
+                        "description": "The written form of the word to look up (preserving case e.g., Books vs books)"
+                    },
+                    {
+                        "name": "trueCase",
+                        "in": "query",
+                        "description": "The written form of the word to look up with normalised case (Books --> books)"
+                    },
+                    {
+                        "name": "lemma",
+                        "in": "query",
+                        "description": "The lemma of the word to look up (e.g., Book, booked, books all have the lemma \"book\")"
+                    },
+                    {
+                        "name": "lexicalCategory",
+                        "in": "query",
+                        "description": "The lexical category of the word(s) to look up (e.g., noun or verb)"
+                    }
+                ]
+            }
+        },
+        "\/stats\/frequency\/words\/{source_lang}\/": {
+            "get": {
+                "summary": "Retrieve a list of frequencies of a word\/words derived from a corpus.",
+                "description": "This endpoint provides a list of frequencies for a given word or words. Unlike the \/word\/ endpoint, the results are split into the smallest units.   To exclude a specific value, prepend it with the minus sign ('-'). For example, to get frequencies of the lemma 'happy' but exclude superlative forms (i.e., happiest) you could use options 'lemma=happy;grammaticalFeatures=-degreeType:superlative'.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden ",
+                "operationId": "GetStatsFrequencyWordsSourceLang",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "source_lang",
+                        "in": "path",
+                        "description": "IANA language code"
+                    },
+                    {
+                        "name": "corpus",
+                        "in": "query",
+                        "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com"
+                    },
+                    {
+                        "name": "wordform",
+                        "in": "query",
+                        "description": "The written form of the word to look up (preserving case e.g., Books vs books)"
+                    },
+                    {
+                        "name": "trueCase",
+                        "in": "query",
+                        "description": "The written form of the word to look up with normalised case (Books --> books)"
+                    },
+                    {
+                        "name": "lemma",
+                        "in": "query",
+                        "description": "The lemma of the word to look up (e.g., Book, booked, books all have the lemma \"book\")"
+                    },
+                    {
+                        "name": "lexicalCategory",
+                        "in": "query",
+                        "description": "The lexical category of the word(s) to look up (e.g., noun or verb)"
+                    },
+                    {
+                        "name": "grammaticalFeatures",
+                        "in": "query",
+                        "description": "The grammatical features of the word(s) to look up entered as a list of k:v (e.g., degree_type:comparative)"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "sort the resulting list by wordform, trueCase, lemma, lexicalCategory, frequency, normalizedFrequency. Descending order is achieved by prepending the value with the minus sign ('-'). Multiple values can be separated by commas (e.g., sort=lexicalCategory,-frequency)"
+                    },
+                    {
+                        "name": "minFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at least `minFrequency`"
+                    },
+                    {
+                        "name": "maxFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at most `maxFrequency`"
+                    },
+                    {
+                        "name": "minNormalizedFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at least `minNormalizedFrequency`"
+                    },
+                    {
+                        "name": "maxNormalizedFrequency",
+                        "in": "query",
+                        "description": "Restrict the query to entries with frequency of at most `maxNormalizedFrequency`"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    }
+                ]
+            }
+        },
+        "\/wordlist\/{source_lang}\/{filters_advanced}": {
+            "get": {
+                "summary": "Retrieve list of words for category with advanced options",
+                "description": "Use this to apply more complex filters to the [list of words](documentation\/glossary?term=wordlist). For example, you may only want to filter out words for which all [senses](documentation\/glossary?term=sense) match the filter, or only its 'prime sense'. You can also filter by word length or match by substring (prefix). \n\n  \n",
+                "operationId": "GetWordlistSourceLangFiltersAdvanced",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "filters_advanced",
+                        "in": "path",
+                        "description": "Semicolon separated list of wordlist parameters, presented as value pairs: LexicalCategory, domains, regions, registers. Parameters can take comma separated list of values. E.g., lexicalCategory=noun,adjective;domains=sport. Number of values limited to 5."
+                    },
+                    {
+                        "name": "exclude",
+                        "in": "query",
+                        "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes headwords that have any senses in specified exclusion attributes (lexical categories, domains, etc.) from results."
+                    },
+                    {
+                        "name": "exclude_senses",
+                        "in": "query",
+                        "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes only those senses of a particular headword that match specified exclusion attributes (lexical categories, domains, etc.) from results but includes the headword if it has other permitted senses."
+                    },
+                    {
+                        "name": "exclude_prime_senses",
+                        "in": "query",
+                        "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes a headword only if the primary sense matches the specified exclusion attributes (registers, domains only)."
+                    },
+                    {
+                        "name": "word_length",
+                        "in": "query",
+                        "description": "Parameter to speficy the minimum (>), exact or maximum (<) length of the words required. E.g., >5 - more than 5 chars; <4 - less than 4 chars; >5<10 - from 5 to 10 chars; 3 - exactly 3 chars."
+                    },
+                    {
+                        "name": "prefix",
+                        "in": "query",
+                        "description": "Set prefix to true if you'd like to get results only starting with search string."
+                    },
+                    {
+                        "name": "exact",
+                        "in": "query",
+                        "description": "If exact=true wordlist returns a list of entries that exactly matches the search string. Otherwise wordlist lists entries that start with prefix string."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    }
+                ]
+            }
+        },
+        "\/wordlist\/{source_lang}\/{filters_basic}": {
+            "get": {
+                "summary": "Retrieve a list of words in a category",
+                "description": "\nUse this to retrieve a [list of words](documentation\/glossary?term=wordlist) for particular [domain](documentation\/glossary?term=domain), [lexical category](documentation\/glossary?term=lexicalcategory), [register](documentation\/glossary?term=registers) and\/or [region](documentation\/glossary?term=regions). View the full list of possible filters using the filters Utility endpoint.  The response only includes [headwords](documentation\/glossary?term=headword), not all their possible [inflections](d",
+                "operationId": "GetWordlistSourceLangFiltersBasic",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "filters_basic",
+                        "in": "path",
+                        "description": "Semicolon separated list of wordlist parameters, presented as value pairs: LexicalCategory, domains, regions, registers. Parameters can take comma separated list of values. E.g., lexicalCategory=noun,adjective;domains=sport. Number of values limited to 5."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    }
+                ]
+            }
+        },
+        "\/domains\/{source_language}\/{target_language}": {
+            "get": {
+                "summary": "Lists available domains in a given bilingual language dataset.",
+                "description": "Returns a list of the available [domains](\/glossary?tag=#domains&expand) for a given bilingual language dataset.\n",
+                "operationId": "GetDomainsSourceLanguageTargetLanguage",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/definitions": {
+            "get": {
+                "summary": "Retrieve only definitions in entry search.",
+                "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+                "operationId": "GetEntriesSourceLangWordDefinitions",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/examples": {
+            "get": {
+                "summary": "Retrieve only example sentences in entry search.",
+                "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+                "operationId": "GetEntriesSourceLangWordExamples",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/pronunciations": {
+            "get": {
+                "summary": "Retrieve only pronunciations in entry search.",
+                "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+                "operationId": "GetEntriesSourceLangWordPronunciations",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/entries\/{source_lang}\/{word_id}\/translations={target_lang}": {
+            "get": {
+                "summary": "Find translation for a given word.",
+                "description": "Returns target language translations for a given word ID and source language. \nIn the event that a word in the dataset does not have a direct translation, the response will be a [definition](\/glossary?tag=#entry&expand) in the target language.\n\n  \n",
+                "operationId": "GetEntriesSourceLangWordTranslationsTargetLang",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "word_id",
+                        "in": "path",
+                        "description": "The source word"
+                    }
+                ]
+            }
+        },
+        "\/registers\/{source_language}\/{target_language}": {
+            "get": {
+                "summary": "Lists available registers in a given bilingual language dataset.",
+                "description": "Returns a list of the available [registers](\/glossary?tag=#registers&expand) for a given bilingual language dataset.\n",
+                "operationId": "GetRegistersSourceLanguageTargetLanguage",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/search\/{source_lang}\/translations={target_lang}": {
+            "get": {
+                "summary": "Find translation results for search query.",
+                "description": "\nFind available translation results  for a search query and language. \n\n  \n",
+                "operationId": "GetSearchSourceLangTranslationsTargetLang",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Search string"
+                    },
+                    {
+                        "name": "prefix",
+                        "in": "query",
+                        "description": "Set prefix to true if you'd like to get results only starting with search string."
+                    },
+                    {
+                        "name": "regions",
+                        "in": "query",
+                        "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the number of results per response. Default and maximum limit is 5000."
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset the start number of the result."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Entry": {
+                "type": "object",
+                "properties": {
+                    "homographNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "senses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Filters": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "HeadwordEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalEntries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "word": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "HeadwordLemmatron": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalEntries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "word": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "HeadwordThesaurus": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalEntries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "word": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Languages": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Lemmatron": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "LemmatronLexicalEntry": {
+                "type": "object",
+                "properties": {
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalCategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "NgramsResult": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Regions": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "RetrieveEntry": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Sense": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subsenses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SentencesEntry": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalEntries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "word": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SentencesLexicalEntry": {
+                "type": "object",
+                "properties": {
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalCategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "SentencesResults": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "StatsWordResult": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "result": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "StatsWordResultList": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Thesaurus": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ThesaurusEntry": {
+                "type": "object",
+                "properties": {
+                    "homographNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "senses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ThesaurusLexicalEntry": {
+                "type": "object",
+                "properties": {
+                    "entries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalCategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ThesaurusSense": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "subsenses": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "UtilityLabels": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "Wordlist": {
+                "type": "object",
+                "properties": {
+                    "metadata": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "results": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "lexicalEntry": {
+                "type": "object",
+                "properties": {
+                    "entries": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "lexicalCategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "text": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
