@@ -1,0 +1,1406 @@
+{
+    "id": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+    "name": "Oxford Dictionaries",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "1319771b8aa606835657e2dcb4279957",
+            "name": "Lists available domains in a bilingual dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_domains_language}\/{target_domains_language}",
+            "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given bilingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_domains_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_domains_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "43ff79391401de619832f39d8877bcab",
+            "name": "Lists available domains in a monolingual dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_language}",
+            "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given monolingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "0186c60d10e031623f032a0abbda38dd",
+            "name": "Retrieve corpus sentences for a given word",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_language}\/{word_id}\/sentences",
+            "description": "\nUse this to retrieve sentences extracted from  corpora which show how a word is used in the language. This is available for English and Spanish. For English, the sentences are linked to the correct [sense](documentation\/glossary?term=sense) of the word in the dictionary. In Spanish, they are linked at the [headword](documentation\/glossary?term=headword) level.\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "6b2d9debe8f9276841944ee89fae444d",
+            "name": "Retrieve dictionary information for a given word",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}",
+            "description": "\nUse this to retrieve definitions, [pronunciations](documentation\/glossary?term=pronunciation), example sentences, [grammatical information](documentation\/glossary?term=grammaticalfeatures) and [word origins](documentation\/glossary?term=etymology). It only works for dictionary [headwords](documentation\/glossary?term=headword), so you may need to use the [Lemmatron](documentation\/glossary?term=lemma) first if your input is likely to be an [inflected](documentation\/glossary?term=inflection) form (",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "397ece908da90a055cf119102a88e5fc",
+            "name": "Retrieve words that mean the opposite",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/antonyms",
+            "description": "\nRetrieve words that are opposite in meaning to the input word ([antonym](documentation\/glossary?term=thesaurus)).\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "1241d81273add457f507334dde809dfb",
+            "name": "Specify GB or US dictionary for English entry search",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/regions={region}",
+            "description": "\nUSe this filter to restrict the lookup to either our Oxford Dictionary of English (GB) or New Oxford American Dictionary (US).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_lang",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "region",
+                    "description": "Region filter parameter. gb = Oxford Dictionary of English. us = New Oxford American Dictionary.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "9c5567794f4e91cd069a47f041d0cdfa",
+            "name": "Retrieve words that are similar",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/synonyms",
+            "description": "\nUse this to retrieve words that are similar in meaning to the input word ([synonym](documentation\/glossary?term=synonym)).\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "718f0c4dfcdba2b98336174c299c51e3",
+            "name": "Retrieve synonyms and antonyms for a given word",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/synonyms;antonyms",
+            "description": "\nRetrieve available [synonyms](documentation\/glossary?term=thesaurus) and [antonyms](documentation\/glossary?term=thesaurus) for a given word and language. \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "1cbf47dc9d7d2d761e4e6c1660a13630",
+            "name": "Apply filters to response",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/{filters}",
+            "description": "\nUse filters to limit the [entry](documentation\/glossary?term=entry) information that is returned. For example, you may only require definitions and not everything else, or just [pronunciations](documentation\/glossary?term=pronunciation). The full list of filters can be retrieved from the filters Utility endpoint. You can also specify values within the filter using '='. For example 'grammaticalFeatures=singular'. Filters can also be combined using a semicolon.\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "67bf0aaab88c5d0f97fccae1b0b7b0a5",
+            "name": "Retrieve translation for a given word",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_translation_language}\/{word_id}\/translations={target_translation_language}",
+            "description": "\nUse this to return translations for a given word. In the event that a word in the dataset does not have a direct translation, the response will be a [definition](documentation\/glossary?term=entry) in the target language.\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_translation_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "word_id",
+                    "description": "The source word",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_translation_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "e9d783dd059787284d4fa41c00047871",
+            "name": "Lists available filters",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/filters",
+            "description": "Returns a list of all the valid filters to construct API calls.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "86201a310fc447a3ee9e5b6bbd713791",
+            "name": "Lists available filters for specific endpoint",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/filters\/{endpoint}",
+            "description": "Returns a list of all the valid filters for a given endpoint to construct API calls.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "endpoint",
+                    "description": "Name of the endpoint.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "75d95039fe15943031c535bf71bec705",
+            "name": "Lists available grammatical features in a dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/grammaticalFeatures\/{source_language}",
+            "description": "Returns a list of the available [grammatical features](documentation\/glossary?term=grammaticalfeatures) for a given language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab370eb3614cc0ae47a848b7735c538c",
+            "name": "Check a word exists in the dictionary and retrieve its root form",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/inflections\/{source_lang}\/{word_id}",
+            "description": "\nUse this to check if a word exists in the dictionary, or what 'root' form it links to (e.g., swimming > swim). The response tells you the possible [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) word. This can then be combined with other endpoints to retrieve more information.\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "word_id",
+                    "description": "The source word",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "b7b21667172616180c94c1b86fb5621a",
+            "name": "Apply optional filters to Lemmatron response",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/inflections\/{source_lang}\/{word_id}\/{filters}",
+            "description": "\nRetrieve available [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) wordform. Filter results by categories.  \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "word_id",
+                    "description": "The source word",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "c72a8c2df7cb283e39067dc7240a3095",
+            "name": "Lists available dictionaries",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/languages",
+            "description": "Returns a list of monolingual and bilingual language datasets available in the API\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sourceLanguage",
+                    "description": "IANA language code. If provided output will be filtered by sourceLanguage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "targetLanguage",
+                    "description": "IANA language code. If provided output will be filtered by sourceLanguage.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b3ed9d226f6b5b49d894aa5193010ef",
+            "name": "Lists available lexical categories in a dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/lexicalcategories\/{language}",
+            "description": "Returns a list of available [lexical categories](documentation\/glossary?term=lexicalcategory) for a given language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "3610c56a087aa57e6564dec5d685027a",
+            "name": "Lists available regions in a monolingual dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/regions\/{source_language}",
+            "description": "Returns a list of the available [regions](documentation\/glossary?term=regions) for a given monolingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "21d469db15438693ee278ae2d0572118",
+            "name": "Lists available registers in a  monolingual dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_language}",
+            "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given monolingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "e624369129a1e232577e0d4eb91bc81b",
+            "name": "Lists available registers in a bilingual dataset",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_register_language}\/{target_register_language}",
+            "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given bilingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_register_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_register_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "f516585dfab27e0511b1bc389566bce6",
+            "name": "Retrieve possible matches to input",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_lang}",
+            "description": "\nUse this to retrieve possible [headword](documentation\/glossary?term=headword) matches for a given string of text. The results are culculated using headword matching, fuzzy matching, and [lemmatization](documentation\/glossary?term=lemma) \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_lang",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Search string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prefix",
+                    "description": "Set prefix to true if you'd like to get results only starting with search string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "regions",
+                    "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "42512bdfbb7e58fec99c2144f059613d",
+            "name": "Retrieve possible translation matches to input",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_search_language}\/translations={target_search_language}",
+            "description": "\nUse this to find matches in our translation dictionaries.\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_search_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "target_search_language",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Search string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prefix",
+                    "description": "Set prefix to true if you'd like to get results only starting with search string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "regions",
+                    "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "4fb23fb581f11fe18f8c2b02c3c3b8b1",
+            "name": "Retrieve the frequency of ngrams (1-4) derived from a corpus",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/ngrams\/{source_lang}\/{corpus}\/{ngram-size}\/",
+            "description": "This endpoint returns frequencies of ngrams of size 1-4. That is the number of times a word (ngram size = 1) or words (ngram size > 1) appear in the corpus. Ngrams are case sensitive (\"I AM\" and \"I am\" will have different frequency) and frequencies are calculated per word (true case) so \"the book\" and \"the books\" are two different ngrams. The results can be filtered based on query parameters.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden b",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_lang",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "corpus",
+                    "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ngram",
+                    "description": "the size of ngrams requested (1-4)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tokens",
+                    "description": "List of tokens to filter. The tokens are separated by spaces, the list items are separated by comma (e.g., for bigrams (n=2) tokens=this is,this was, this will)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contains",
+                    "description": "Find ngrams containing the given token(s). Use comma or space as token separators; the order of tokens is irrelevant.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "punctuation",
+                    "description": "Flag specifying whether to lookup ngrams that include punctuation or not (possible values are \"true\" and \"false\"; default is \"false\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Option specifying whether tokens should be returned as a single string (option \"google\") or as a list of strings (option \"oup\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minFrequency",
+                    "description": "Restrict the query to entries with frequency of at least `minFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxFrequency",
+                    "description": "Restrict the query to entries with frequency of at most `maxFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minDocumentFrequency",
+                    "description": "Restrict the query to entries that appear in at least `minDocumentFrequency` documents",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxDocumentFrequency",
+                    "description": "Restrict the query to entries that appera in at most `maxDocumentFrequency` documents",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "b02e4da29eddde3cd93870552e55cf1d",
+            "name": "Retrieve the frequency of a word derived from a corpus.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/word\/{source_lang}\/",
+            "description": "This endpoint provides the frequency of a given word. When multiple database records match the query parameters, the returned frequency is the sum of the individual frequencies. For example, if the query parameters are lemma=test, the returned frequency will include the verb \"test\", the noun \"test\" and the adjective \"test\" in all forms (Test, tested, testing, etc.)   If you are interested in the frequency of the word \"test\" but want to exclude other forms (e.g., tested) use the option trueCase=t",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_lang",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "corpus",
+                    "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "wordform",
+                    "description": "The written form of the word to look up (preserving case e.g., Books vs books)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "trueCase",
+                    "description": "The written form of the word to look up with normalised case (Books --> books)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lemma",
+                    "description": "The lemma of the word to look up (e.g., Book, booked, books all have the lemma \"book\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lexicalCategory",
+                    "description": "The lexical category of the word(s) to look up (e.g., noun or verb)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "4b33324c1a9adf17cdf80a0c4b251e83",
+            "name": "Retrieve a list of frequencies of a word\/words derived from a corpus.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/words\/{source_lang}\/",
+            "description": "This endpoint provides a list of frequencies for a given word or words. Unlike the \/word\/ endpoint, the results are split into the smallest units.   To exclude a specific value, prepend it with the minus sign ('-'). For example, to get frequencies of the lemma 'happy' but exclude superlative forms (i.e., happiest) you could use options 'lemma=happy;grammaticalFeatures=-degreeType:superlative'.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "source_lang",
+                    "description": "IANA language code",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "corpus",
+                    "description": "For corpora other than 'nmc' (New Monitor Corpus) please contact api@oxforddictionaries.com",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "wordform",
+                    "description": "The written form of the word to look up (preserving case e.g., Books vs books)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "trueCase",
+                    "description": "The written form of the word to look up with normalised case (Books --> books)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lemma",
+                    "description": "The lemma of the word to look up (e.g., Book, booked, books all have the lemma \"book\")",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "lexicalCategory",
+                    "description": "The lexical category of the word(s) to look up (e.g., noun or verb)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "grammaticalFeatures",
+                    "description": "The grammatical features of the word(s) to look up entered as a list of k:v (e.g., degree_type:comparative)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "sort the resulting list by wordform, trueCase, lemma, lexicalCategory, frequency, normalizedFrequency. Descending order is achieved by prepending the value with the minus sign ('-'). Multiple values can be separated by commas (e.g., sort=lexicalCategory,-frequency)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minFrequency",
+                    "description": "Restrict the query to entries with frequency of at least `minFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxFrequency",
+                    "description": "Restrict the query to entries with frequency of at most `maxFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "minNormalizedFrequency",
+                    "description": "Restrict the query to entries with frequency of at least `minNormalizedFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "maxNormalizedFrequency",
+                    "description": "Restrict the query to entries with frequency of at most `maxNormalizedFrequency`",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f2f1e14ed57a8da9e620d80d41b9914",
+            "name": "Retrieve list of words for category with advanced options",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/wordlist\/{source_lang}\/{filters_advanced}",
+            "description": "Use this to apply more complex filters to the [list of words](documentation\/glossary?term=wordlist). For example, you may only want to filter out words for which all [senses](documentation\/glossary?term=sense) match the filter, or only its 'prime sense'. You can also filter by word length or match by substring (prefix). \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "filters_advanced",
+                    "description": "Semicolon separated list of wordlist parameters, presented as value pairs: LexicalCategory, domains, regions, registers. Parameters can take comma separated list of values. E.g., lexicalCategory=noun,adjective;domains=sport. Number of values limited to 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude",
+                    "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes headwords that have any senses in specified exclusion attributes (lexical categories, domains, etc.) from results.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_senses",
+                    "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes only those senses of a particular headword that match specified exclusion attributes (lexical categories, domains, etc.) from results but includes the headword if it has other permitted senses.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_prime_senses",
+                    "description": "Semicolon separated list of parameters-value pairs (same as filters). Excludes a headword only if the primary sense matches the specified exclusion attributes (registers, domains only).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "word_length",
+                    "description": "Parameter to speficy the minimum (>), exact or maximum (<) length of the words required. E.g., >5 - more than 5 chars; <4 - less than 4 chars; >5<10 - from 5 to 10 chars; 3 - exactly 3 chars.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prefix",
+                    "description": "Set prefix to true if you'd like to get results only starting with search string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exact",
+                    "description": "If exact=true wordlist returns a list of entries that exactly matches the search string. Otherwise wordlist lists entries that start with prefix string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ebbac02bdacb36a5cc43d73f7d48103",
+            "name": "Retrieve a list of words in a category",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/wordlist\/{source_lang}\/{filters_basic}",
+            "description": "\nUse this to retrieve a [list of words](documentation\/glossary?term=wordlist) for particular [domain](documentation\/glossary?term=domain), [lexical category](documentation\/glossary?term=lexicalcategory), [register](documentation\/glossary?term=registers) and\/or [region](documentation\/glossary?term=regions). View the full list of possible filters using the filters Utility endpoint.  The response only includes [headwords](documentation\/glossary?term=headword), not all their possible [inflections](d",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "filters_basic",
+                    "description": "Semicolon separated list of wordlist parameters, presented as value pairs: LexicalCategory, domains, regions, registers. Parameters can take comma separated list of values. E.g., lexicalCategory=noun,adjective;domains=sport. Number of values limited to 5.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "6612f714f5a96bd17ad761c5c950ef95",
+            "name": "Lists available domains in a given bilingual language dataset.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_language}\/{target_language}",
+            "description": "Returns a list of the available [domains](\/glossary?tag=#domains&expand) for a given bilingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "f54815cb45c41f46feb36446ec0d2327",
+            "name": "Retrieve only definitions in entry search.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/definitions",
+            "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "b351d90c27874bd367bddcd1af275a85",
+            "name": "Retrieve only example sentences in entry search.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/examples",
+            "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "45e02a83edae19f6eb41c255d9247e37",
+            "name": "Retrieve only pronunciations in entry search.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/pronunciations",
+            "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae87dd4ab46dc6a1e64e4784ec0ad3ee",
+            "name": "Find translation for a given word.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/translations={target_lang}",
+            "description": "Returns target language translations for a given word ID and source language. \nIn the event that a word in the dataset does not have a direct translation, the response will be a [definition](\/glossary?tag=#entry&expand) in the target language.\n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "word_id",
+                    "description": "The source word",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b1059a6d63cc29f3d7d1a5ffb9f3fb4",
+            "name": "Lists available registers in a given bilingual language dataset.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_language}\/{target_language}",
+            "description": "Returns a list of the available [registers](\/glossary?tag=#registers&expand) for a given bilingual language dataset.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cf31cb20810a36c57717b681f6657f3",
+            "name": "Find translation results for search query.",
+            "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_lang}\/translations={target_lang}",
+            "description": "\nFind available translation results  for a search query and language. \n\n  \n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "Search string",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "prefix",
+                    "description": "Set prefix to true if you'd like to get results only starting with search string.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "regions",
+                    "description": "If searching in English, filter words with specific region(s) either 'us' or 'gb'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Limit the number of results per response. Default and maximum limit is 5000.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "Offset the start number of the result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "rawModeData": ""
+        }
+    ]
+}
