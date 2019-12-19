@@ -1,0 +1,100 @@
+{
+    "name": "Oxford Dictionaries",
+    "description": "<p>If you&rsquo;re looking to enhance your app or website with dictionary data, don&rsquo;t compromise on quality. The Oxford Dictionaries API offers easy and intuitive access to Oxford's dictionary content, which is trusted around the world. Here at Oxford Dictionaries, home of the OED, we love words. That&rsquo;s why we have experienced lexicographers tracking the living language, delving deep into our corpora and monitoring a wide range of media in order to understand how words are being used and how language is evolving. This research is used by our editors to write and edit dictionary entries and translations, meaning we&rsquo;re able to offer up-to-date, accurate, and reliable lexical content in multiple languages.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/oxford-dictionaries-api.png",
+    "tags": [
+        "dictionaries",
+        "general data",
+        "have api",
+        "have swagger",
+        "pedestal",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/oxford-dictionaries\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Oxford Dictionaries",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/oxford-dictionaries-api.png",
+            "humanURL": "https:\/\/developer.oxforddictionaries.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/oxford-dictionaries-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/oxford-dictionaries.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/oxford-dictionaries-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/api-blog.oxforddictionaries.com\/"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/developer.oxforddictionaries.com\/"
+        },
+        {
+            "type": "FAQ",
+            "url": "https:\/\/developer.oxforddictionaries.com\/faq"
+        },
+        {
+            "type": "Forums",
+            "url": "https:\/\/forum.oxforddictionaries.com\/api\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-04-10-29-46.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-14-56-56.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-14-57-15.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-14-57-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-14-57-28.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-14-58-05.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-03-22-40-20.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28479-2019-09-04-10-28-46.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/OxfordWordsAPI"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/developer.oxforddictionaries.com\/"
+        }
+    ]
+}
