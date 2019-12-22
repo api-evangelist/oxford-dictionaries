@@ -1,5 +1,5 @@
 {
-    "id": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+    "id": "e70473757c6e69b8b1230ecdc6aa9e7f",
     "name": "Oxford Dictionaries",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "1319771b8aa606835657e2dcb4279957",
+            "id": "f7563f3e0d81b724e3c06df7c155eca9",
             "name": "Lists available domains in a bilingual dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_domains_language}\/{target_domains_language}",
             "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given bilingual language dataset.\n",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "43ff79391401de619832f39d8877bcab",
+            "id": "441a37187f368d3824a2292db3e54205",
             "name": "Lists available domains in a monolingual dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_language}",
             "description": "Returns a list of the available [domains](documentation\/glossary?term=domain) for a given monolingual language dataset.\n",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "0186c60d10e031623f032a0abbda38dd",
+            "id": "6b99c910081f24c1a6827f0ac520e5c0",
             "name": "Retrieve corpus sentences for a given word",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_language}\/{word_id}\/sentences",
             "description": "\nUse this to retrieve sentences extracted from  corpora which show how a word is used in the language. This is available for English and Spanish. For English, the sentences are linked to the correct [sense](documentation\/glossary?term=sense) of the word in the dictionary. In Spanish, they are linked at the [headword](documentation\/glossary?term=headword) level.\n  \n",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "6b2d9debe8f9276841944ee89fae444d",
+            "id": "43e6aed9ef7baa679f02059c26f27266",
             "name": "Retrieve dictionary information for a given word",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}",
             "description": "\nUse this to retrieve definitions, [pronunciations](documentation\/glossary?term=pronunciation), example sentences, [grammatical information](documentation\/glossary?term=grammaticalfeatures) and [word origins](documentation\/glossary?term=etymology). It only works for dictionary [headwords](documentation\/glossary?term=headword), so you may need to use the [Lemmatron](documentation\/glossary?term=lemma) first if your input is likely to be an [inflected](documentation\/glossary?term=inflection) form (",
@@ -129,11 +129,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "397ece908da90a055cf119102a88e5fc",
+            "id": "05858920a917c23822da1c397d90ff83",
             "name": "Retrieve words that mean the opposite",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/antonyms",
             "description": "\nRetrieve words that are opposite in meaning to the input word ([antonym](documentation\/glossary?term=thesaurus)).\n\n  \n",
@@ -152,11 +152,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "1241d81273add457f507334dde809dfb",
+            "id": "12a2b95923ae609cf5f1fa1a9b737eef",
             "name": "Specify GB or US dictionary for English entry search",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/regions={region}",
             "description": "\nUSe this filter to restrict the lookup to either our Oxford Dictionary of English (GB) or New Oxford American Dictionary (US).\n",
@@ -190,11 +190,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "9c5567794f4e91cd069a47f041d0cdfa",
+            "id": "67b4d78a3bd5677cb5cc9592e2014d55",
             "name": "Retrieve words that are similar",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/synonyms",
             "description": "\nUse this to retrieve words that are similar in meaning to the input word ([synonym](documentation\/glossary?term=synonym)).\n\n  \n",
@@ -213,11 +213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "718f0c4dfcdba2b98336174c299c51e3",
+            "id": "b18f24a82888df626f152c6e096f9052",
             "name": "Retrieve synonyms and antonyms for a given word",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/synonyms;antonyms",
             "description": "\nRetrieve available [synonyms](documentation\/glossary?term=thesaurus) and [antonyms](documentation\/glossary?term=thesaurus) for a given word and language. \n\n  \n",
@@ -236,11 +236,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "1cbf47dc9d7d2d761e4e6c1660a13630",
+            "id": "8547992cc8eb8118b31cf6f798ab42d9",
             "name": "Apply filters to response",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/{filters}",
             "description": "\nUse filters to limit the [entry](documentation\/glossary?term=entry) information that is returned. For example, you may only require definitions and not everything else, or just [pronunciations](documentation\/glossary?term=pronunciation). The full list of filters can be retrieved from the filters Utility endpoint. You can also specify values within the filter using '='. For example 'grammaticalFeatures=singular'. Filters can also be combined using a semicolon.\n\n  \n",
@@ -259,11 +259,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "67bf0aaab88c5d0f97fccae1b0b7b0a5",
+            "id": "05b9b87e5f7e8a928603ad7e6eca5fd2",
             "name": "Retrieve translation for a given word",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_translation_language}\/{word_id}\/translations={target_translation_language}",
             "description": "\nUse this to return translations for a given word. In the event that a word in the dataset does not have a direct translation, the response will be a [definition](documentation\/glossary?term=entry) in the target language.\n\n  \n",
@@ -304,11 +304,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "e9d783dd059787284d4fa41c00047871",
+            "id": "e711bc1c74fabe95aee73b5c31bd8fd8",
             "name": "Lists available filters",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/filters",
             "description": "Returns a list of all the valid filters to construct API calls.\n",
@@ -327,11 +327,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "86201a310fc447a3ee9e5b6bbd713791",
+            "id": "85c96130e387930274894d7e13dea971",
             "name": "Lists available filters for specific endpoint",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/filters\/{endpoint}",
             "description": "Returns a list of all the valid filters for a given endpoint to construct API calls.\n",
@@ -358,11 +358,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "75d95039fe15943031c535bf71bec705",
+            "id": "235ed8f97048cf9ec59414f13d204b29",
             "name": "Lists available grammatical features in a dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/grammaticalFeatures\/{source_language}",
             "description": "Returns a list of the available [grammatical features](documentation\/glossary?term=grammaticalfeatures) for a given language dataset.\n",
@@ -389,11 +389,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "ab370eb3614cc0ae47a848b7735c538c",
+            "id": "3edebb7a407e80495310f388670ae326",
             "name": "Check a word exists in the dictionary and retrieve its root form",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/inflections\/{source_lang}\/{word_id}",
             "description": "\nUse this to check if a word exists in the dictionary, or what 'root' form it links to (e.g., swimming > swim). The response tells you the possible [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) word. This can then be combined with other endpoints to retrieve more information.\n\n  \n",
@@ -420,11 +420,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "b7b21667172616180c94c1b86fb5621a",
+            "id": "ed26dbcbeffc5dbe44d2ae828ea0542f",
             "name": "Apply optional filters to Lemmatron response",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/inflections\/{source_lang}\/{word_id}\/{filters}",
             "description": "\nRetrieve available [lemmas](documentation\/glossary?term=lemma) for a given [inflected](documentation\/glossary?term=inflection) wordform. Filter results by categories.  \n\n  \n",
@@ -451,11 +451,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "c72a8c2df7cb283e39067dc7240a3095",
+            "id": "3e14bc2f91f2e63877b7e2a036eeaf26",
             "name": "Lists available dictionaries",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/languages",
             "description": "Returns a list of monolingual and bilingual language datasets available in the API\n",
@@ -489,11 +489,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "5b3ed9d226f6b5b49d894aa5193010ef",
+            "id": "b31a2f61021def91e4599f5e3bc4a301",
             "name": "Lists available lexical categories in a dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/lexicalcategories\/{language}",
             "description": "Returns a list of available [lexical categories](documentation\/glossary?term=lexicalcategory) for a given language dataset.\n",
@@ -520,11 +520,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "3610c56a087aa57e6564dec5d685027a",
+            "id": "358aac19e40a4539a4d1bd06774b721c",
             "name": "Lists available regions in a monolingual dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/regions\/{source_language}",
             "description": "Returns a list of the available [regions](documentation\/glossary?term=regions) for a given monolingual language dataset.\n",
@@ -551,11 +551,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "21d469db15438693ee278ae2d0572118",
+            "id": "c787a6d95c9b94bfe9c037ef2fbe276f",
             "name": "Lists available registers in a  monolingual dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_language}",
             "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given monolingual language dataset.\n",
@@ -582,11 +582,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "e624369129a1e232577e0d4eb91bc81b",
+            "id": "b0308177c931755508294bf6312be06f",
             "name": "Lists available registers in a bilingual dataset",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_register_language}\/{target_register_language}",
             "description": "Returns a list of the available [registers](documentation\/glossary?term=registers) for a given bilingual language dataset.\n",
@@ -620,11 +620,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "f516585dfab27e0511b1bc389566bce6",
+            "id": "015f5e024068ac063ed32962773d4b2e",
             "name": "Retrieve possible matches to input",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_lang}",
             "description": "\nUse this to retrieve possible [headword](documentation\/glossary?term=headword) matches for a given string of text. The results are culculated using headword matching, fuzzy matching, and [lemmatization](documentation\/glossary?term=lemma) \n\n  \n",
@@ -686,11 +686,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "42512bdfbb7e58fec99c2144f059613d",
+            "id": "0224a905bf735008d7d3fea43315d03c",
             "name": "Retrieve possible translation matches to input",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_search_language}\/translations={target_search_language}",
             "description": "\nUse this to find matches in our translation dictionaries.\n\n  \n",
@@ -759,11 +759,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "4fb23fb581f11fe18f8c2b02c3c3b8b1",
+            "id": "c8289972b6368ded2c32c61800350d6f",
             "name": "Retrieve the frequency of ngrams (1-4) derived from a corpus",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/ngrams\/{source_lang}\/{corpus}\/{ngram-size}\/",
             "description": "This endpoint returns frequencies of ngrams of size 1-4. That is the number of times a word (ngram size = 1) or words (ngram size > 1) appear in the corpus. Ngrams are case sensitive (\"I AM\" and \"I am\" will have different frequency) and frequencies are calculated per word (true case) so \"the book\" and \"the books\" are two different ngrams. The results can be filtered based on query parameters.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden b",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "b02e4da29eddde3cd93870552e55cf1d",
+            "id": "19a448008657c8ef2d23be1b8d43d8df",
             "name": "Retrieve the frequency of a word derived from a corpus.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/word\/{source_lang}\/",
             "description": "This endpoint provides the frequency of a given word. When multiple database records match the query parameters, the returned frequency is the sum of the individual frequencies. For example, if the query parameters are lemma=test, the returned frequency will include the verb \"test\", the noun \"test\" and the adjective \"test\" in all forms (Test, tested, testing, etc.)   If you are interested in the frequency of the word \"test\" but want to exclude other forms (e.g., tested) use the option trueCase=t",
@@ -940,11 +940,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "4b33324c1a9adf17cdf80a0c4b251e83",
+            "id": "78020b942669d985465982d6e657afee",
             "name": "Retrieve a list of frequencies of a word\/words derived from a corpus.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/stats\/frequency\/words\/{source_lang}\/",
             "description": "This endpoint provides a list of frequencies for a given word or words. Unlike the \/word\/ endpoint, the results are split into the smallest units.   To exclude a specific value, prepend it with the minus sign ('-'). For example, to get frequencies of the lemma 'happy' but exclude superlative forms (i.e., happiest) you could use options 'lemma=happy;grammaticalFeatures=-degreeType:superlative'.   Parameters can be provided in PATH, GET or POST (form or json). The parameters in PATH are overriden ",
@@ -1062,11 +1062,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "2f2f1e14ed57a8da9e620d80d41b9914",
+            "id": "062d83cf192167d3cf6eb27e99fd13db",
             "name": "Retrieve list of words for category with advanced options",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/wordlist\/{source_lang}\/{filters_advanced}",
             "description": "Use this to apply more complex filters to the [list of words](documentation\/glossary?term=wordlist). For example, you may only want to filter out words for which all [senses](documentation\/glossary?term=sense) match the filter, or only its 'prime sense'. You can also filter by word length or match by substring (prefix). \n\n  \n",
@@ -1149,11 +1149,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "1ebbac02bdacb36a5cc43d73f7d48103",
+            "id": "18ad82b4d8e657ab4c9daa9e46a5de70",
             "name": "Retrieve a list of words in a category",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/wordlist\/{source_lang}\/{filters_basic}",
             "description": "\nUse this to retrieve a [list of words](documentation\/glossary?term=wordlist) for particular [domain](documentation\/glossary?term=domain), [lexical category](documentation\/glossary?term=lexicalcategory), [register](documentation\/glossary?term=registers) and\/or [region](documentation\/glossary?term=regions). View the full list of possible filters using the filters Utility endpoint.  The response only includes [headwords](documentation\/glossary?term=headword), not all their possible [inflections](d",
@@ -1194,11 +1194,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "6612f714f5a96bd17ad761c5c950ef95",
+            "id": "4aa74e5fbbe078ad2ad33400542b551f",
             "name": "Lists available domains in a given bilingual language dataset.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/domains\/{source_language}\/{target_language}",
             "description": "Returns a list of the available [domains](\/glossary?tag=#domains&expand) for a given bilingual language dataset.\n",
@@ -1217,11 +1217,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "f54815cb45c41f46feb36446ec0d2327",
+            "id": "0a3b1cd74706644dd0a853a962039f33",
             "name": "Retrieve only definitions in entry search.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/definitions",
             "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
@@ -1240,11 +1240,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "b351d90c27874bd367bddcd1af275a85",
+            "id": "a74b1414cb29ca253b5d72b9b715556a",
             "name": "Retrieve only example sentences in entry search.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/examples",
             "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
@@ -1263,11 +1263,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "45e02a83edae19f6eb41c255d9247e37",
+            "id": "d8d3f7de71da7fe7ac662aa861d7e8a4",
             "name": "Retrieve only pronunciations in entry search.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/pronunciations",
             "description": "\nFind available [dictionary entries](\/glossary?tag=#entry&expand) for given word and language. Filter results by categories. \n\n  \n",
@@ -1286,11 +1286,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "ae87dd4ab46dc6a1e64e4784ec0ad3ee",
+            "id": "8d3e1d3aee49a8b76090b043a30cfa9a",
             "name": "Find translation for a given word.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/entries\/{source_lang}\/{word_id}\/translations={target_lang}",
             "description": "Returns target language translations for a given word ID and source language. \nIn the event that a word in the dataset does not have a direct translation, the response will be a [definition](\/glossary?tag=#entry&expand) in the target language.\n\n  \n",
@@ -1317,11 +1317,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "3b1059a6d63cc29f3d7d1a5ffb9f3fb4",
+            "id": "c17a88b722fb78ea8257ef06255d7ef9",
             "name": "Lists available registers in a given bilingual language dataset.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/registers\/{source_language}\/{target_language}",
             "description": "Returns a list of the available [registers](\/glossary?tag=#registers&expand) for a given bilingual language dataset.\n",
@@ -1340,11 +1340,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         },
         {
-            "id": "6cf31cb20810a36c57717b681f6657f3",
+            "id": "3722ddd82cb40a0da57bf3ded2cd85a4",
             "name": "Find translation results for search query.",
             "url": "httpsod-api-demo.oxforddictionaries.com:443\/api\/v1\/search\/{source_lang}\/translations={target_lang}",
             "description": "\nFind available translation results  for a search query and language. \n\n  \n",
@@ -1399,7 +1399,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0fefd1c55e2d20aaf65b78c3bc6194e3",
+            "collectionId": "e70473757c6e69b8b1230ecdc6aa9e7f",
             "rawModeData": ""
         }
     ]
